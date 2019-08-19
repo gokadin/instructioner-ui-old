@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  instructioner-ui:
+    container_name: instructioner-ui
+    build: .
+    volumes:
+    - './:/app'
+    ports:
+    - 4200:4200
+ 

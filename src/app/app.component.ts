@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'instructioner-ui';
+
+  exercise = {
+    title: "some title",
+    attemptCount: 2,
+    isFinished: false,
+    isCorrect: false,
+    content: "content",
+    hints: []
+  };
 }

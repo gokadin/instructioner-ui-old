@@ -1,0 +1,66 @@
+.exercise {
+  border: 1px solid #cccccc;
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #e2e2e2;
+    color: #444;
+    padding: 0 10px;
+
+    .title {
+      flex: 1;
+    }
+
+    .attempts {
+      text-align: right;
+      margin-right: 20px;
+    }
+
+    .header-controls {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .report-button {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+
+        > i.fa { color: #842210; }
+      }
+
+      .report-button:hover {
+        background-color: #26a69a;
+
+        > i.fa { color: #fff; }
+      }
+    }
+  }
+
+  .header.correct {
+    background-color: #67b168;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title { color: #fff; }
+    .attempts { color: #fff; }
+    .header-controls .report-button > i.fa { color: #fff; }
+  }
+
+  .header.incorrect {
+    background-color: #ac2925;
+
+    .title { color: #fff; }
+    .attempts { color: #fff; }
+    .header-controls .report-button > i.fa { color: #fff; }
+  }
+}

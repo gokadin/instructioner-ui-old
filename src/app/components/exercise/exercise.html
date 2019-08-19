@@ -1,0 +1,19 @@
+<div class="exercise" *ngIf="exercise">
+    <div class="header" [class.correct]="exercise.isCorrect"
+         [class.incorrect]="!exercise.isCorrect && (exercise.attemptCount > 0 || exercise.isFinished)">
+        <div class="title">{{ exercise.title }}</div>
+        <div class="attempts">attempts: {{ exercise.attemptCount }} / 3</div>
+        <div class="header-controls">
+        </div>
+    </div>
+    <!-- <question [content]="exercise.content"></question>
+    <hints [hints]="exercise.hints"></hints>
+    <exercise-controls [exercise]="exercise"
+                       (showHint)="showHint.emit($event)"
+                       (checkAnswer)="checkAnswer.emit()"
+                       (showAnswer)="showAnswer.emit()"
+                       (next)="next.emit()"></exercise-controls>
+    <answers [exercise]="exercise"
+             (selectOption)="selectOption.emit($event)"
+             (dropOption)="dropOption.emit($event)"></answers> -->
+</div>
